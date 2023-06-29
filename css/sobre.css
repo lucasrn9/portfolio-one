@@ -1,0 +1,56 @@
+.sobre{
+    padding: 1rem;
+    background-color: var(--azul-10);
+    display: flex;
+    justify-content: center;
+}
+
+.sobre__container{
+    width: 100%;
+    max-width: var(--maxWidth);
+}
+
+.sobre__title{
+    color: var(--preto-100);
+    font-size: 1.375rem;
+    font-family: 'Raleway',sans-serif;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.sobre__paragraph{
+    color: var(--preto-100);
+    font-size: 0.875rem;
+    font-family: 'Raleway',sans-serif;
+    margin-bottom: 1rem;
+}
+
+.sobre__signatureContainer{
+max-width: 140px;
+}
+
+.sobre__signature{
+    width: 100%;
+}
+
+@media screen and (min-width:768px){
+    .sobre{
+        padding: 2rem;
+    }
+}
+
+@media screen and (min-width:1440px){
+    .sobre{
+        padding: 4rem;
+        display: flex;
+        justify-content: center;
+    }
+    .sobre__title{
+        font-size: 2rem;
+    }
+    .sobre__paragraph{
+        font-size: 1rem;
+        max-width: 751px;
+    }
+}
+

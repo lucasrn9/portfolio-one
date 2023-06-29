@@ -1,0 +1,90 @@
+.formacao{
+    padding: 2rem;
+    background-color: var(--azul-10);
+}
+
+.formacao__title{
+    color: var(--preto-100);
+    text-align: center;
+    font-size: 1.375rem;
+    font-family: 'Raleway',sans-serif;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.formacao__cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formacao__card{
+    width: 100%;
+    max-width: 296px;
+    margin-top: 1rem;
+}
+
+.formacao__cardImgContainer{
+    width: 100%;
+    height: 118px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formacao__cardImg{
+    width: 84px;
+    height: 58px;
+}
+
+.formacao__cardTitle{
+    color: var(--preto-100);
+    font-size: 1rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    margin: 0.5rem 0;
+}
+
+.formacao__cardParagraph{
+    color: var(--preto-100);
+    font-size: 0.875rem;
+    font-family: 'Raleway',sans-serif;
+    font-weight: 500;
+}
+
+@media screen and (min-width:768px){
+    .formacao__cards{
+        flex-direction: row;
+        justify-content: center;
+    }
+    .formacao__card{
+        max-width: 224px;
+        margin-right: 1rem;
+    }
+    .formacao__card:last-child{
+        margin-right: 0;
+    }
+}
+
+@media screen and (min-width:1440px){
+    .formacao{
+        padding: 5.12rem;
+    } 
+    .formacao__title{
+        font-size: 2rem;
+    }
+    .formacao__card{
+        max-width: none;
+    }
+    .formacao__card{
+        max-width: 368px;
+    }
+    .formacao__cardImgContainer{
+        height: 286px;
+    }
+    .formacao__cardImg{
+        width: 192px;
+        height: 130px;
+    }
+}

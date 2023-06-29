@@ -1,0 +1,24 @@
+.btn{
+    margin-right: 1rem;
+    padding: 0.75rem 1rem;
+    font-size: 0.875rem;
+    font-family: 'Raleway',sans-serif;
+    font-weight: 600;
+    background-color: none;
+    border: 1px solid transparent;
+}
+
+.btn--big{
+    padding: 1rem;
+}
+
+.btn--outlined{
+    border: 1px solid var(--azul-100);
+    color: var(--azul-100);
+    background-color: var(--cinza-100);
+}
+
+.btn--filled{
+    background-color: var(--azul-100);
+    color: white;
+}

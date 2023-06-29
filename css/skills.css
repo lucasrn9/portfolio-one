@@ -1,0 +1,34 @@
+.skills{
+    padding: 1rem;
+    background-color: var(--cinza-100);
+}
+
+.skills__title{
+    color: var(--preto-100);
+    text-align: center;
+    font-size: 1.375rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+}
+
+.skills__cardsWrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-right: calc(var(--cardColumnGap) * -1);
+    /* gets the negative value of the variable --cardColumnGap */
+}
+
+@media screen and (min-width:768px){
+    .skills{
+        padding: 2rem;
+    }
+}
+@media screen and (min-width:1440px){
+    .skills{
+        padding-bottom: 4.5rem;
+    }
+    .skills__title{
+        font-size: 2rem;
+    }
+}
