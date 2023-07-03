@@ -386,53 +386,64 @@
           Preencha o formulário ao lado e entrarei em contato o mais rápido
           possível.
         </p>
-        <form class="contato__form">
+        <form class="contato__form" id="contato__form">
           <div class="contato__formField">
-            <label class="contato__formLabel" for="nome">Nome</label>
-            <input
-              class="contato__formInput"
-              type="text"
-              name="nome"
-              id="nome"
-              placeholder="Nome"
-              required
-            />
+            <div class="contato__formFieldContainer">
+              <label class="contato__formLabel" for="nome">Nome</label>
+              <input
+                class="contato__formInput"
+                type="text"
+                name="nome"
+                id="nome"
+                placeholder="Nome"
+                maxlength="50"
+              />
+            </div>
+            <span class="contato__formError"></span>
           </div>
           <div class="contato__formField">
-            <label class="contato__formLabel" for="email">E-mail</label>
-            <input
-              class="contato__formInput"
-              type="email"
-              name="email"
-              id="email"
-              placeholder="E-mail"
-              required
-            />
+            <div class="contato__formFieldContainer">
+              <label class="contato__formLabel" for="email">E-mail</label>
+              <input
+                class="contato__formInput"
+                type="email"
+                name="email"
+                id="email"
+                placeholder="E-mail"
+              />
+            </div>
+            <span class="contato__formError"></span>
           </div>
           <div class="contato__formField">
-            <label class="contato__formLabel" for="assunto">Assunto</label>
-            <input
-              class="contato__formInput"
-              type="text"
-              name="assunto"
-              id="assunto"
-              placeholder="Assunto"
-              required
-            />
+            <div class="contato__formFieldContainer">
+              <label class="contato__formLabel" for="assunto">Assunto</label>
+              <input
+                class="contato__formInput"
+                type="text"
+                name="assunto"
+                id="assunto"
+                placeholder="Assunto"
+                maxlength="50"
+              />
+            </div>
+            <span class="contato__formError"></span>
           </div>
           <div class="contato__formField contato__formField--textArea">
-            <label class="contato__formLabel" for="mensagem">Mensagem</label>
-            <textarea
-              class="contato__formInput"
-              name="mensagem"
-              id="mensagem"
-              cols="30"
-              rows="10"
-              placeholder="Mensagem"
-              required
-            ></textarea>
+            <div class="contato__formFieldContainer">
+              <label class="contato__formLabel" for="mensagem">Mensagem</label>
+              <textarea
+                class="contato__formInput"
+                name="mensagem"
+                id="mensagem"
+                cols="30"
+                rows="10"
+                placeholder="Mensagem"
+                maxlength="300"
+              ></textarea>
+            </div>
+            <span class="contato__formError"></span>
           </div>
-          <button class="btn btn--big btn--filled" type="submit">
+          <button type="submit" class="btn btn--big btn--filled">
             Enviar mensagem
           </button>
         </form>
@@ -444,6 +455,6 @@
         2023
       </h2>
     </footer>
-    <script src="/js/form.js"></script>
+    <script type="module" src="./js/form.js"></script>
   </body>
 </html>

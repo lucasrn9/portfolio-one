@@ -32,16 +32,21 @@
 }
 
 .contato__formField{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: white;
+    width: 100%;
     margin-bottom: 2rem;
-    border-radius: 4px;
-    height: 56px;
 }
 
-.contato__formField--textArea{
+.contato__formFieldContainer{
+width: 100%;
+height: 56px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+background-color: white;
+border-radius: 4px;
+}
+
+.contato__formField--textArea .contato__formFieldContainer{
     height: 133px;
     padding-top: 0.56rem;
 }
@@ -85,6 +90,15 @@
 .contato__formInput:focus{
     border-bottom: 0.125rem solid var(--azul-100);
     outline: none;
+}
+
+.contato__formError{
+    display: inline-block;
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.25rem;
+    font-size: 0.85rem;
+    color: var(--vermelho-50);
+    margin-top: 0.3rem;
 }
 
 @media screen and (min-width:1440px){
